@@ -7,6 +7,8 @@ VUEJS est un framework évolutif pour construire des interfaces utilisateur. À 
     el:'#app',
    
 })``
+
+""
 2--DATA & METHODS
 ``new Vue ({
     el:'#app',
