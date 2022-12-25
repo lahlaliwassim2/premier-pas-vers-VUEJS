@@ -70,3 +70,28 @@ index.html
 </body>
 </html>``
 
+4-Events in Vuesjs
+
+
+`` <h1>{{conter}}</h1>
+        <button @click="incriment(1)">incre(1)</button>
+        <button @click="decriment(1)">decre(1)</button>
+        <hr>
+        <button v-on:click="incriment(5)">incre(5)</button>
+        <button v-on:click="decriment(5)">decre(5)</button>
+``
+
+
+script : </br>
+`` methods : {
+        // saySalam: function() {
+        //     return `hello frinds I'm Wassim Lahlali `
+        // }
+        incriment : function(n){
+            this.conter+=n;
+        },
+        decriment : function(n){
+          this.conter-=n;
+        }
+
+    }``
