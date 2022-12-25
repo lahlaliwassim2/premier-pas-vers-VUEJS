@@ -10,10 +10,11 @@
 <body>
     <div id="app">
         {{ message }}    
-        <input type="text" :value="input">
         {{ saySalam() }}
-
         <img v-bind:src="image" alt="">
+        <input type="text" :value="input">
+
+        <span v-html="github"></span>
     </div>
     <script src="script.js"></script>
 </body>
