@@ -12,10 +12,10 @@ new Vue ({
         //     return `hello frinds I'm Wassim Lahlali `
         // }
         incriment : function(){
-            return conter += 1
+            this.conter++;
         },
-        deriment : function(){
-            return conter -= 1
+        decriment : function(){
+          this.conter--;
         }
 
     }
