@@ -9,12 +9,17 @@
 </head>
 <body>
     <div id="app">
-        {{ message }}    
+        <!-- {{ message }}    
         {{ saySalam() }}
         <img v-bind:src="image" alt="">
         <input type="text" :value="input">
 
-        <span v-html="github"></span>
+        <span v-html="github"></span> -->
+
+        <h1>{{conter}}</h1>
+        <button v-on:click="conter++">incre</button>
+        <button v-on:click="conter--">decre</button>
+
     </div>
     <script src="script.js"></script>
 </body>
