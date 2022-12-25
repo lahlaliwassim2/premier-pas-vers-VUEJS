@@ -17,9 +17,11 @@
         <span v-html="github"></span> -->
 
         <h1>{{conter}}</h1>
-        <button v-on:click="incriment">incre</button>
-        <button v-on:click="decriment">decre</button>
-
+        <button @click="incriment(1)">incre(1)</button>
+        <button @click="decriment(1)">decre(1)</button>
+        <hr>
+        <button v-on:click="incriment(5)">incre(5)</button>
+        <button v-on:click="decriment(5)">decre(5)</button>
     </div>
     <script src="script.js"></script>
 </body>

@@ -11,11 +11,11 @@ new Vue ({
         // saySalam: function() {
         //     return `hello frinds I'm Wassim Lahlali `
         // }
-        incriment : function(){
-            this.conter++;
+        incriment : function(n){
+            this.conter+=n;
         },
-        decriment : function(){
-          this.conter--;
+        decriment : function(n){
+          this.conter-=n;
         }
 
     }
