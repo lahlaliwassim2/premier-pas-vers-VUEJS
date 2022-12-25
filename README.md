@@ -9,7 +9,9 @@ VUEJS est un framework évolutif pour construire des interfaces utilisateur. À 
 })``
 
 ""
-2--DATA & METHODS
+2--DATA & METHODS ""
+
+
 ``new Vue ({
     el:'#app',
     data : {
@@ -23,8 +25,11 @@ VUEJS est un framework évolutif pour construire des interfaces utilisateur. À 
         }
     }
 })``
+""
 3--DATA Binding 
+""
     -script.js
+""
 ``new Vue ({
     el:'#app',
     data : {
@@ -39,8 +44,9 @@ VUEJS est un framework évolutif pour construire des interfaces utilisateur. À 
         }
     }
 })``
-
+""
 index.html
+""
 ``<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,3 +68,4 @@ index.html
     <script src="script.js"></script>
 </body>
 </html>``
+
