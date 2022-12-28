@@ -4,12 +4,12 @@ VUEJS est un framework évolutif pour construire des interfaces utilisateur. À 
 
 1--instance Vue :
 
-``new Vue ({
-    el:'#app',
-   
-})``
+    new Vue ({
+        el:'#app',
+    
+    })
 
-""
+
 2--DATA & METHODS ""
 
 

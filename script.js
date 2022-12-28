@@ -5,7 +5,8 @@ new Vue ({
         // input: "valeure de l input",
         // image: "https://images.pexels.com/photos/14840714/pexels-photo-14840714.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
         // github:"<a href='https://github.com/lahlaliwassim2'>mon compte sur Github</a>"
-        conter : 0 
+        conter : 0 ,
+        name : ''
     },
     methods : {
         // saySalam: function() {

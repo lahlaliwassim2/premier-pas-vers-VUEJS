@@ -20,7 +20,9 @@
             <button @click.prevent="add">add</button>
         </form>
         <a @click.prevent="add" href="https://github.com/lahlaliwassim2/">mon compte </a> -->
-        <input @keyup.enter="logName"  @keyup.alt.enter="add"  type="text">
+        <input  v-model="name" type="text">
+        <input v-model="name" type="text">
+        <span>{{ name }}</span>
         <button @click.prevent="add">add</button>
 
         <h1>{{conter}}</h1>
