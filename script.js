@@ -6,7 +6,8 @@ new Vue ({
         // image: "https://images.pexels.com/photos/14840714/pexels-photo-14840714.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
         // github:"<a href='https://github.com/lahlaliwassim2'>mon compte sur Github</a>"
         conter : 0 ,
-        name : ''
+        name : '',
+        num :0 
     },
     methods : {
         // saySalam: function() {
@@ -23,7 +24,13 @@ new Vue ({
         },
         logName: function () {
             console.log("name is log ")
+        },
+        resultat : function () {
+            return this.conter * this.num
         }
 
+    },
+    computed : {
+        
     }
 })

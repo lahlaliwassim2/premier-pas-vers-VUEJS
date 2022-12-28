@@ -20,11 +20,12 @@
             <button @click.prevent="add">add</button>
         </form>
         <a @click.prevent="add" href="https://github.com/lahlaliwassim2/">mon compte </a> -->
-        <input  v-model="name" type="text">
+        <!-- <input  v-model="name" type="text">
         <input v-model="name" type="text">
-        <span>{{ name }}</span>
-        <button @click.prevent="add">add</button>
-
+        <span>{{ name }}</span> -->
+        <!-- <button @click.prevent="add">add</button> -->
+        <input v-model="num" type="text">
+        <h1>resultat =  {{ resultat }}</h1>
         <h1>{{conter}}</h1>
         <button @click.once="incriment(1)">incre(1)</button>
         <button @click="decriment(1)">decre(1)</button>

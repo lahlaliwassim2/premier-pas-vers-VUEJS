@@ -111,3 +111,30 @@ VUEJS est un framework évolutif pour construire des interfaces utilisateur. À 
      <input  v-model="name" type="text">
         <input v-model="name" type="text">
         <span>{{ name }}</span>
+
+8--Computed Propertie
+Les expressions dans le template sont très pratiques, mais elles sont uniquement destinées à des opérations simples. Mettre trop de logique dans vos templates peut les rendre trop verbeux et difficiles à maintenir par exemple : 
+-----index.html
+     <input v-model="num" type="text">
+        <h1>resultat =  {{ resultat() }}</h1>
+        <h1>{{conter}}</h1>
+-----script.js
+    methods : {
+            resultat : function () {
+            return this.conter * this.num
+        }
+    }
+    }
+le probleme ici que l exucution de fonction se repetent et si vous avez un bloque de code compliquée sa cause des probleme la solution se 'VUEJS' et ce qu on appelle 'COMPUTED' comme : 
+-----index.html
+     <input v-model="num" type="text">
+        <h1>resultat =  {{ resultat }}</h1>
+        <h1>{{conter}}</h1>
+-----script.js
+    computed : {
+            resultat : function () {
+            return this.conter * this.num
+        }
+    }
+    }
+resultat est appellé maintenant comme une variable et c est ça le secret
