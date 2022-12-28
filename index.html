@@ -15,9 +15,14 @@
         <input type="text" :value="input">
 
         <span v-html="github"></span> -->
+        <form action="">
+            <input type="text">
+            <button @click.prevent="add">add</button>
+        </form>
+        <a @click.prevent="add" href="https://github.com/lahlaliwassim2/">mon compte </a>
 
         <h1>{{conter}}</h1>
-        <button @click="incriment(1)">incre(1)</button>
+        <button @click.once="incriment(1)">incre(1)</button>
         <button @click="decriment(1)">decre(1)</button>
         <hr>
         <button v-on:click="incriment(5)">incre(5)</button>

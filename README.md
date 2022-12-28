@@ -95,3 +95,12 @@ script : </br>
         }
 
     }``
+
+    5-Events Modifiers
+
+    
+    `` <form action="">
+            <input type="text">
+            <button @click.prevent="add">add</button>
+        </form>
+        <a @click.prevent="add" href="https://github.com/lahlaliwassim2/">mon compte </a>``

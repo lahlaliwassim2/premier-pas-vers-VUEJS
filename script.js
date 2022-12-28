@@ -16,6 +16,9 @@ new Vue ({
         },
         decriment : function(n){
           this.conter-=n;
+        },
+        add: function() {
+            alert("hello")
         }
 
     }
