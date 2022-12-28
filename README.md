@@ -6,106 +6,108 @@ VUEJS est un framework évolutif pour construire des interfaces utilisateur. À 
 
     new Vue ({
         el:'#app',
-    
+
     })
 
+2--DATA & METHODS 
 
-2--DATA & METHODS ""
+    new Vue ({
+        el:'#app',
+        data : {
+            message: "hello hello",
+            input: "valeure de l input",
 
-
-``new Vue ({
-    el:'#app',
-    data : {
-        message: "hello hello",
-        input: "valeure de l input",
-        
-    },
-    methods : {
-        saySalam: function() {
-            return `hello frinds I'm Wassim Lahlali `
-        }
-    }
-})``
-""
-3--DATA Binding 
-""
-    -script.js
-""
-``new Vue ({
-    el:'#app',
-    data : {
-        message: "hello hello",
-        input: "valeure de l input",
-        image: "https://images.pexels.com/photos/14840714/pexels-photo-14840714.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        github:"<a href='https://github.com/lahlaliwassim2'>mon compte sur Github</a>"
-    },
-    methods : {
-        saySalam: function() {
-            return `hello frinds I'm Wassim Lahlali `
-        }
-    }
-})``
-""
-index.html
-""
-``<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
-    <title>Premier Pas vers VUEJS</title>
-</head>
-<body>
-    <div id="app">
-        {{ message }}    
-        {{ saySalam() }}
-        <img v-bind:src="image" alt="">
-        <input type="text" :value="input">
-
-        <span v-html="github"></span>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>``
-
-4-Events in Vuesjs
-
-
-`` <h1>{{conter}}</h1>
-        <button @click="incriment(1)">incre(1)</button>
-        <button @click="decriment(1)">decre(1)</button>
-        <hr>
-        <button v-on:click="incriment(5)">incre(5)</button>
-        <button v-on:click="decriment(5)">decre(5)</button>
-``
-
-
-script : </br>
-`` methods : {
-        // saySalam: function() {
-        //     return `hello frinds I'm Wassim Lahlali `
-        // }
-        incriment : function(n){
-            this.conter+=n;
         },
-        decriment : function(n){
-          this.conter-=n;
+        methods : {
+            saySalam: function() {
+                return `hello frinds I'm Wassim Lahlali `
+            }
+        }
+    })
+
+3--DATA Binding </br>
+----------script.js
+
+    new Vue ({
+        el:'#app',
+        data : {
+            message: "hello hello",
+            input: "valeure de l input",
+            image: "https://images.pexels.com/photos/14840714/pexels-photo-14840714.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+            github:"<a href='https://github.com/lahlaliwassim2'>mon compte sur Github</a>"
+        },
+        methods : {
+            saySalam: function() {
+                return `hello frinds I'm Wassim Lahlali `
+            }
+        }
+    })
+
+-----------index.html
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+        <title>Premier Pas vers VUEJS</title>
+    </head>
+    <body>
+        <div id="app">
+            {{ message }}    
+            {{ saySalam() }}
+            <img v-bind:src="image" alt="">
+            <input type="text" :value="input">
+
+            <span v-html="github"></span>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
+
+4--Events in Vuesjs
+---------index.html
+  <form>
+   <h1>{{conter}}</h1>
+   <button @click="incriment(1)">incre(1)</button>
+   <button @click="decriment(1)">decre(1)</button>
+     
+   <button v-on:click="incriment(5)">incre(5)</button>
+   <button v-on:click="decriment(5)">decre(5)</button>
+  </form>
+
+
+------------------script : </br>
+     methods : {
+            // saySalam: function() {
+            //     return `hello frinds I'm Wassim Lahlali `
+            // }
+            incriment : function(n){
+                this.conter+=n;
+            },
+            decriment : function(n){
+              this.conter-=n;
+            }
+
         }
 
-    }``
-``
-    5-Events Modifiers
+5--Events Modifiers
 
 
-    `` <form action="">
+     <form action="">
             <input type="text">
             <button @click.prevent="add">add</button>
         </form>
         <a @click.prevent="add" href="https://github.com/lahlaliwassim2/">mon compte </a>``
 
-6-  Keys Events
+6--Keys Events
 
-``     <input @keyup.enter="logName"  @keyup.alt.enter="add"  type="text">
-``
+     <input @keyup.enter="logName"  @keyup.alt.enter="add"  type="text">
+
+7--Two Way DataBinding v-model
+
+     <input  v-model="name" type="text">
+        <input v-model="name" type="text">
+        <span>{{ name }}</span>
