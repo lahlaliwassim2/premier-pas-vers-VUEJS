@@ -15,11 +15,13 @@
         <input type="text" :value="input">
 
         <span v-html="github"></span> -->
-        <form action="">
+        <!-- <form action="">
             <input type="text">
             <button @click.prevent="add">add</button>
         </form>
-        <a @click.prevent="add" href="https://github.com/lahlaliwassim2/">mon compte </a>
+        <a @click.prevent="add" href="https://github.com/lahlaliwassim2/">mon compte </a> -->
+        <input @keyup.enter="logName"  @keyup.alt.enter="add"  type="text">
+        <button @click.prevent="add">add</button>
 
         <h1>{{conter}}</h1>
         <button @click.once="incriment(1)">incre(1)</button>

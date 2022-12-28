@@ -19,6 +19,9 @@ new Vue ({
         },
         add: function() {
             alert("hello")
+        },
+        logName: function () {
+            console.log("name is log ")
         }
 
     }
